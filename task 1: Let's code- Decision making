@@ -1,0 +1,37 @@
+# include <iostream>
+using namespace std;
+int main()
+{
+int age,k,l;
+cout<<"Enter the age"<<endl;
+cin>>age;
+cout<<"Age: "<<age<<endl;
+if(age>=18)
+{
+cout<<"You are eligible for voting"<<endl;
+k=age-18;
+if(k==0)
+{
+cout<<"You met the eligibility for voting in this year"<<endl;
+}
+else
+{
+cout<<"You met the eligibility for voting before "<<k<<" year"<<endl;
+}
+}
+else
+{
+cout<<"You are not eligible for voting"<<endl;
+}
+if(age<18)
+{
+cout<<"You are a minor because your age is less than 18"<<endl;
+l=18-age;
+cout<<"You have to wait "<<l<<" more years to vote"<<endl;
+}
+else
+{
+cout<<"You are a major"<<endl;
+}
+return (0);
+}
