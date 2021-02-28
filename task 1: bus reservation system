@@ -1,0 +1,52 @@
+#include<conio.h>
+#include<cstdio>
+#include<iostream>
+#include<string.h>
+#include<cstdlib>
+using namespace std;
+static int k=0;
+class p;
+{
+char bn[5], driver[10], arri[5],depart[5],from[15], to[15],seat[8][4][10];
+public:
+void install();
+void allotment();
+void empty();
+void show();
+void avail();
+void position(int m);
+}
+bus[10];
+void vline(char ch)
+{
+for(int m=70;m>0;m--)
+cout<<ch;
+}
+void p::install()
+{
+cout<<"enter the bus no: "<<endl;
+cin>>bus[k].bn;
+cout<<"enter the driver's name: "<<endl;
+cin>>bus[k].driver;
+cout<<"departure: "<<endl;
+cin>>bus[k].depart;
+cout<<"from: "<<endl;
+cin>>bus[k].from;
+cout<<"to  "<<endl;
+cin>>bus[k].to;
+bus[k].empty();
+k++;
+}
+void p::allotment()
+{
+int seat;
+char no[10]
+top:
+cout<<" bus no: "<<endl;
+cin>>no;
+int n;
+for(n=0;n<=k;n++)
+{
+if(strcmp(bus[n].bn,no)==0)
+break;
+}
